@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Surnames Blender</title>
+    <link rel="stylesheet" href="surname.css">
+</head>
+<body>
+    <h1>Mr. Surname Blender</h1>
+    
+    <div>
+        <span>Surname:</span>
+        <input id="surname" type="text" size="20" />
+    </div>
+    
+    <div>
+        <span>Font:</span>
+        <select id="font">
+            <option>Arial</option>
+            <option>Comic Sans MS</option>
+            <option>Times New Roman</option>
+            <option>Verdana</option>
+        </select>
+    </div>
+    
+    <div>
+        <span>Position:</span>
+        <input name="pos" type="radio" value="seq" checked="checked" />Sequential
+        <input name="pos" type="radio" value="rand" /> Random
+        <input name="pos" type="radio" value="rev" /> Reverse
+    </div>
+    
+    <div>
+        <span>Text Color:</span>
+        <select id="textColor">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+    </div>
+    
+    <div>
+        <span>Font Size:</span>
+        <input type="number" id="fontSize" placeholder="font size" value="16" min="10" max="50">
+        <span>px</span>
+    </div>
+    
+    <div>
+        <span>Letter Spacing:</span>
+        <input type="range" id="letterSpacing" min="0" max="20" value="0">
+        <span id="spacingValue">0</span>px
+    </div>
+    
+    <div>
+        <span>Letter Size:</span>
+        <input type="range" id="letterSize" min="10" max="40" value="16">
+        <span id="sizeValue">16</span>px
+    </div>
+    
+    <div>
+        <button id="blendBtn">Blend Now</button>
+        <button id="applyStyleBtn">Apply Style</button>
+    </div>
+    
+    <div id="output" class="output-area"></div>
+
+    <script src="surname.js"></script>
+</body>
+</html>
